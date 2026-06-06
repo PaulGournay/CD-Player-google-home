@@ -72,16 +72,3 @@ if (state) { // Commande Google "Allumer"
     irsend.sendPanasonic(0x4004, 0x05386855);  // 5. Sélection de la piste (Titre 7)
 }
 ```
-
-
-### 🔐 Sécurisation des identifiants
-> ⚠️ **Important :** Ne publiez jamais vos clés API et vos identifiants Wi-Fi personnels sur GitHub. 
-
-Avant de pousser votre code, assurez-vous de masquer vos accès. La meilleure pratique consiste à utiliser un fichier de configuration séparé (ex: `include/secrets.h`) ou à modifier les lignes suivantes dans votre `main.cpp` avec des balises génériques :
-
-```cpp
-#define WIFI_SSID   "VOTRE_SSID"
-#define WIFI_PASS   "VOTRE_MOT_DE_PASSE"
-#define APP_KEY     "VOTRE_SINRIC_APP_KEY"
-#define APP_SECRET  "VOTRE_SINRIC_APP_SECRET"
-#define SWITCH_ID   "VOTRE_SINRIC_DEVICE_ID"
