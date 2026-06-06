@@ -70,9 +70,9 @@ if (state) { // Commande Google "Allumer"
     irsend.sendPanasonic(0x4004, 0x05505005);  // 3. Passage en mode CD
     delay(6000);                               // 4. Attente du spin du disque (6s)
     irsend.sendPanasonic(0x4004, 0x05386855);  // 5. Sélection de la piste (Titre 7)
-}```
+}
+```
 
-##🔧 Installation et Configuration
 
 ### 🔐 Sécurisation des identifiants
 > ⚠️ **Important :** Ne publiez jamais vos clés API et vos identifiants Wi-Fi personnels sur GitHub. 
